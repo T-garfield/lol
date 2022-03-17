@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    /* box-sizing: border-box; */
+    /* font-family: Helvetica, Arial, sans-serif; */
+}
+
+body {
+    background-color:rgb(80, 93, 212);
+}
+
+.frame1 {
+    /* width: 100%; */
+    width: 1366px;
+    height: 768px;
+    background-color:rgb(80, 93, 212);
+    position: relative;
+    margin: auto;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1300px;
+    height: 700px;
+    background-color:rgb(209, 143, 43);
+    border-radius: 30px;
+    filter: drop-shadow(5px 5px 3px);
+}
+
+.word {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 500px;
+    background: green;
+    border-radius: 15px;
+    filter: drop-shadow(3px 3px 10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    position: absolute;
+    width: 420px;
+    height: 70px;
+    /* display: flex; */
+    bottom: 50px;
+    /* border-style: solid; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 200px;
+    height: 60px;
+    background-color: rgb(247, 43, 155);
+    border-radius: 15px;
+    /* position: absolute; */
+    /* bottom: 50px; */
+    opacity: .8;
+    transition: .2s;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 3px #000000);
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 60px;
+    color: white;    
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.fg {
+    background-color: yellow;
+    color: #000000;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.btn:active {
+    /* bottom: 40px; */
+    margin-top: 6px;
+}
+
+h1 {
+    position: absolute;
+    font-size: 80px;
+    top: 40px;
+    color: #ccc;
+    text-align: center;
+}
+
+h3 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+}
+
+.ds {
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+p {
+    width: 600px;
+    position: absolute;
+    left: 50%;
+    top: 242px;
+    transform: translate(-50%, -50%);
+    font-size: 40px; 
+    color: bisque;
+}
+
+.p2 {
+    text-align: center;
+    font-style: italic;
+    font-size: 30px;
+    color: yellow;
+    font-weight: bold;
+    top: auto;
+    bottom: 10px;
+}
