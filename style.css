@@ -132,3 +132,12 @@ p {
     top: auto;
     bottom: 10px;
 }
+
+h2 {
+    bottom: 3%;
+    /* right: 0; */
+    position: absolute;
+    font-size: 15px;
+    display: none;
+}
+

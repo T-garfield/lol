@@ -1,18 +1,10 @@
 var vocab = [
-	'competion',
-	'opponent',
-	'referee',
-	'pleasure',
-	'carry on',
-	'eat out',
-	'send off',
-	'take up',
-	'in the middle of',
 	'athlete',
 	'athletic',
 	'beat',
 	'board game in',
 	'caption',
+	'carry on',
 	'challenge',
 	'champion',
 	'cheat',
@@ -22,11 +14,15 @@ var vocab = [
 	'competition',
 	'concert',
 	'defeat',
+	'eat out',
 	'entertaining',
 	'folk music',
+	'give up',
 	'group',
 	'gym',
 	'have fun',
+	'in the middle of',
+	'join in',
 	'member',
 	'opponent',
 	'organise',
@@ -35,17 +31,13 @@ var vocab = [
 	'rhytm',
 	'risk',
 	'score',
-	'support',
-	'team',
-	'video game',
-	'carry on',
-	'eat out',
-	'give up',
-	'join in',
 	'send off',
+	'support',
 	'take up',
+	'team',
 	'turn down',
-	'turn up'
+	'turn up',
+	'video game'
 ]
 
 // txt.innerText = 'abc';
@@ -102,9 +94,15 @@ function vocabL() {
         reset();
     }
 
+	var countin = document.getElementsByTagName('h2')[0];
     var txt = document.querySelector('.h3');
+
     txt.style = null;
     txt.innerText = array2[i];
+
+	if ( i=== 0) {countin.style.display = "block";}
+	countin.innerText = `${i+1} / ${array2.length}`;
+
     i++;
     // return i;
 }
