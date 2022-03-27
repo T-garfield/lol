@@ -3,24 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- <meta name="viewport" content="width=device-width, user-scalable=no"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>francaisVocab</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <script src="https://kit.fontawesome.com/93a82ce0e9.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    
     <div class="frame1">
         <div class="main">
+            
             <div class="word">
                 <h1>What does this word <br> meannnnn?</h1>
                 <h2>60/60</h2>
-                <h3 class="h3" style="font-size: 40px; color: pink;">U readyyy gơn? LÉt gâu :)</h3>
+                <h3 class="h3" style="font-size: 40px; color: pink;">U readyyy Boii? LÉt gâu :)</h3>
                 <div class="button">
+                    <div onclick="index(-1)" class="btn back"><i class="fa-solid fa-circle-chevron-left"></i></div>
+                    
                     <div onclick="vocabL()" class="btn ds">New Word</div>
+                    <div onclick="f2Show()" class="btn ds hint">Hinttt :D</div>
+                    
                     <div onclick="forgot()" class="btn ds fg">Suka I forgot :)</div>
+                    
+                    <div onclick="meaningWhat()" class="btn fwd">
+                        
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                    </div>
                 </div>
             </div>
+        
+        
+            <!-- <div class="word">
+                <h1 style="font-size: 50px;">Here's what u havnt remember yet bích :)</h1>
+                <p>${forgotA}!!</p>
+                <p class="p2"> Reload to roll againnnn .-. </p>            
+                <div onclick="showList()" class="btn btn--after ds">list</div>
+            </div> -->
+        
         </div>
     </div>
+    <div class="frame2">Hellooooo
+        <div onclick="f2uShow()" class="btn__back">
+            <i class="btn__back__icon fa-solid fa-circle-chevron-left"></i>
+        </div>
+    </div>
+
 </body>
-<script src="./script.js"></script>
 </html>
+<script src="./assets/js/arrays.js"></script>
+<script src="./assets/js/script.js"></script>
